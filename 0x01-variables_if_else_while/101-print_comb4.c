@@ -1,5 +1,5 @@
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * main - Entry point
@@ -9,25 +9,30 @@
 
 int main(void)
 {
-    int s;
-    int u;
-    int t;
+	int s, t, u;
 
-    for (s = 48; s < 58; s++) {
-        for (u = s + 1; u < 58; u++) {
-            for (t = u + 1; t < 58; t++) {
-                putchar(s);
-                putchar(u);
-                putchar(t);
-                if (s != 56 || u != 57 || t != 58) {
-                    putchar(',');
-                    putchar(' ');
-                }
-            }
-        }
-    }
+	for (s = '0'; s <= '9'; s++)
+	{
+		for (t = s + 1; t <= '9'; t++)
+		{
+			for (u = t + 1; u <= '9'; u++)
+			{
+				if ((t != s) != u)
+				{
+					putchar(s);
+					putchar(t);
+					putchar(u);
 
-    putchar('\n');
+					if (s == '7' && t == '8')
+						continue;
 
-    return 0;
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
+	}
+	putchar('\n');
+
+	return (0);
 }

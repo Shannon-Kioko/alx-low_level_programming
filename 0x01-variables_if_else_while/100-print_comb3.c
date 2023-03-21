@@ -9,23 +9,27 @@
 
 int main(void)
 {
-    int s;
-    int u;
+	int s;
+	int t;
 
-    for (s = 48; s < 58; s++) {
-        /* Greater by one to make sure there are no reccurences such as 01 and 10 */
-        for (u = s + 1; u < 58; u++) {
-            putchar(s);
-            putchar(u);
-            /* Only adds the separators if the number isn't the last number */
-            if (s != 56 || u != 57) {
-                putchar(',');
-                putchar(' ');
-            }
-        }
-    }
+	for (s = '0'; s <= '9'; s++)
+	{
+		for (t = s + 1; t <= '9'; t++)
+		{
+			if (t != s)
+			{
+				putchar(s);
+				putchar(t);
 
-    putchar('\n');
+				if (s == '8' && t == '9')
+					continue;
 
-    return 0;
+				putchar(',');
+				putchar(' ');
+			}
+		}
+	}
+	putchar('\n');
+
+	return (0);
 }
