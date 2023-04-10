@@ -10,9 +10,6 @@
  */
 int main(int argc, char *argv[])
 {
-    /** If the program name exists, print the number of
-     * arguments minus the program name
-     */
     if (argv[0])
     {
         printf("%d\n", argc - 1);
