@@ -1,14 +1,15 @@
 #include "main.h"
 
 /**
- * _strcpy - copies the string pointed to by src to dest
+ * _strncpy - copies a string
  * @dest: destination string
  * @src: source string
+ * @n: number of bytes to copy
  *
- * Return: pointer to dest
+ * Return: pointer to resulting string dest
  */
 
-char *_strcpy(char *dest, char *src)
+char *_strncpy(char *dest, char *src, int n)
 {
-  return(0);
+  return (0)
 }
