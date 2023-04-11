@@ -2,9 +2,11 @@
 
 /**
  * main - Entry point of program
+ *
  * @argc: The num of arguments passed to the program
  * @argv: Array of strings containing the arguments
- * Return: Always 0 (Success)
+ * 
+ * Return: Always 0 (For Success)
  */
 int main(int argc, char*argv[])
 {
