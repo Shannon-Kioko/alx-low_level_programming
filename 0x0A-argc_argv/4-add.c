@@ -5,7 +5,7 @@
 /**
  * main - program adds two values
  * @argc: argument counter
- * @argv: argument vector containing values
+ * @argv: argument vector with values
  * Return: 0
  */
 
@@ -24,7 +24,8 @@ int main(int argc, char **argv)
 			}
 		}
 		no = atoi(argv[argc]);
-		sum += n;
+		sum += no;
+
 	}
 	printf("%d\n", sum);
 	return (0);
