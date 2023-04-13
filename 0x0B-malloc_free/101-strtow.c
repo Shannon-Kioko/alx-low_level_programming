@@ -24,7 +24,7 @@ char **strtow(char *str)
     if (counter == 0)
         return (NULL);
     array = malloc(sizeof(char *) * (counter + 1));
-    if (arr == NULL)
+    if (array == NULL)
         return (NULL);
     for (i = 0; str[i] != '\0' && p < counter; i++)
     {
