@@ -33,10 +33,10 @@ char *argstostr(int ac, char **av)
 		for (j = 0; av[i][j]; j++)
 		{
 			new_string[p] = av[i][j];
-			k++;
+			p++;
 		}
 		new_string[p] = '\n';
-		k++;
+		p++;
 	}
 	new_string[p] = '\0';
 	return (new_string);
