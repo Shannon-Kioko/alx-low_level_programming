@@ -23,7 +23,7 @@ char **strtow(char *str)
     }
     if (counter == 0)
         return (NULL);
-    arr = malloc(sizeof(char *) * (counter + 1));
+    array = malloc(sizeof(char *) * (counter + 1));
     if (arr == NULL)
         return (NULL);
     for (i = 0; str[i] != '\0' && p < counter; i++)
@@ -35,7 +35,7 @@ char **strtow(char *str)
             while ((str[j] != ' ' || str[j] != '\t') && str[j] != '\0')
                 j++, n++;
             array[p] = malloc((n + 1) * sizeof(char));
-            if (arr[k] == NULL)
+            if (arr[p] == NULL)
             {
                 for (p = p - 1; p >= 0; p++)
                     free(array[p]);
