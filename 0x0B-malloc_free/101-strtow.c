@@ -28,11 +28,11 @@ char **strtow(char *str)
         return (NULL);
     for (i = 0; str[i] != '\0' && p < counter; i++)
     {
-        if (str[i] != ' ' || str[i] != '\t')
+        if (str[i] != ' ' && str[i] != '\t')
         {
             n = 0;
             j = i;
-            while ((str[j] != ' ' || str[j] != '\t') && str[j] != '\0')
+            while ((str[j] != ' ' && str[j] != '\t') && str[j] != '\0')
                 j++, n++;
             array[p] = malloc((n + 1) * sizeof(char));
             if (array[p] == NULL)
