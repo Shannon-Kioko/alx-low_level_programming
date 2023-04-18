@@ -1,7 +1,7 @@
 #include <stdlib.h>
 #include "dog.h"
 /**
-  * free_dog - a function that frees dogs.
+  * free_dog - function frees dogs.
   * @d: pointer to dog struct.
   * Return: void.
   */
