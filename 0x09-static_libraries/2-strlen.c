@@ -1,3 +1,5 @@
+#include "main.h"
+
 /**
  * _strlen - returns the length of a string
  * @s: The string to be measured
@@ -7,6 +9,10 @@
 
 int _strlen(char *s)
 {
-	/* code goes here */
-	return (0);
+	int n = 0;
+
+	while (s[n] != '\0')
+		n++;
+
+	return (n);
 }
