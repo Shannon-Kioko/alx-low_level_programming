@@ -1,10 +1,9 @@
 /*
  * listint_len - This returns the numof elements in a linked list.
- *
  * @h: pointer to the list struct.
+ *
  * Description: returns the numof elements in a linked list.
  * I don't get why there'
- *
  * Return: numof elements in the linked list.
  */
 #include "lists.h"
