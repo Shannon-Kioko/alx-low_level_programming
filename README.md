@@ -1,2 +1,1 @@
-# alx-low_level_programming
-Repo to learn C programming language basics
+Repo learning about C
