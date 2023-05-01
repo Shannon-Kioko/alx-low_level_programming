@@ -11,5 +11,25 @@
 
 char *_strncpy(char *dest, char *src, int n)
 {
-  return (0)
+ 
+	int len = 0, i = 0;
+	char *temp = dest, *st = src;
+
+	while (*src)
+	{
+		len++;
+		src++;
+	}
+
+	len++;
+
+	if (n > len)
+		n = len;
+
+	src = st;
+
+	for (; i < n; i++)
+		*dest++ = *src++;
+
+	return (temp);
 }
