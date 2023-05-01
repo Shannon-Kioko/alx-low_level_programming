@@ -3,9 +3,7 @@
  * @h: pointer to the list struct.
  *
  * Description: function listint_len returns the number of elements in a linked list.
- * It takes a pointer to the head node of the list as a parameter,
- * and iterates through the list counting each element until the end is reached.
- * The function returns the count of the number of nodes in the list.
+ * starting from given head node.
  * Return: numof elements in the linked list.
  */
 #include "lists.h"
