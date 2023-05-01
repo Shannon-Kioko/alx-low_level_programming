@@ -18,7 +18,8 @@ void free_listint(listint_t *head)
 		head = head->next;
 		free(tmp);
 	}
-  /* free(head) - segmentation fault
+  /*
+   * free(head) - segmentation fault
    * already null
    */
 }
