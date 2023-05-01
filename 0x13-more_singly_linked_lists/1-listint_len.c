@@ -1,5 +1,5 @@
 /*
- * This returns the numof elements in a linked list.
+ * listint_len - This returns the numof elements in a linked list.
  *
  * @h: pointer to the list struct.
  *
@@ -16,5 +16,5 @@ size_t listint_len(const listint_t *h)
 		h = h->next;
 		numo_elements++;
 	}
-	return numo_elements;
+	return (numo_elements);
 }
