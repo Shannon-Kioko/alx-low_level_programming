@@ -5,8 +5,6 @@
  *
  * @h: pointer to the list struct.
  *
- * Description: prints all the elements of a singly linked list
- *
  * Return: number of nodes in the list.
  */
 
