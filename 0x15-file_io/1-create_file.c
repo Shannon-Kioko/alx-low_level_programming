@@ -11,10 +11,10 @@
 
 int create_file(const char *filename, char *text_content)
 {
-	int fd, return_val, txt_len = 0;
+	int fd, ret_val, txt_len = 0;
 
 	if (!filename)
-  	{
+	{
 		return (-1);
 	}
 
@@ -30,8 +30,8 @@ int create_file(const char *filename, char *text_content)
 
 	if (text_content)
 	{
-		return_val = write(fd, text_content, txt_len);
-		if (return_val == -1)
+		ret_val = write(fd, text_content, txt_len);
+		if (ret_val == -1)
 		{
 			close(fd);
 			return (-1);
