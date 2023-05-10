@@ -25,7 +25,7 @@ int copy_file(const char *file_from, const char *file_to);
 void print_error(int code, const char *file);
 
 /*
- * print_elf_info - prints information contained in the ELF header 
+ * print_elf_info - prints information contained in the ELF header
  * at the start of an ELF file.
  */
 void print_elf_info(unsigned char *header);
