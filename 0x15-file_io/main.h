@@ -7,7 +7,8 @@
 #include <stdio.h>
 
 /* read_textfile - function that reads a text file and prints it to
-the POSIX standard output. */
+ *the POSIX standard output.
+ */
 ssize_t read_textfile(const char *filename, size_t letters);
 
 /* create_file - function that creates a file. */
@@ -23,7 +24,7 @@ int copy_file(const char *file_from, const char *file_to);
 void print_error(int code, const char *file);
 
 /* print_elf_info - prints information contained in the ELF header 
-*at the start of an ELF file.
+* at the start of an ELF file.
 */
 void print_elf_info(unsigned char *header);
 
