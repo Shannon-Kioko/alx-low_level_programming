@@ -14,10 +14,10 @@ int create_file(const char *filename, char *text_content)
 	int fd, return_val, txt_len = 0;
 
 	if (!filename)
-  {
-    return (-1);
-  }
-  
+  	{
+		return (-1);
+	}
+
 	if (text_content)
 	{
 		while (text_content[txt_len])
