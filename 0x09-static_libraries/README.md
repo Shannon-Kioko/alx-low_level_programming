@@ -14,4 +14,4 @@ The command used to create or update the index is called `ranlib`, and is invoke
 This is done by adding the library's name to the list of object file names given to the linker, using a special flag, normally `-l`. Here is an example:
 ```cc main.o -L. -lutil -o prog```
 
-For more on Libraries in C, look at this: [ Libraries in C ] (https://docencia.ac.upc.edu/FIB/USO/Bibliografia/unix-c-libraries.html#libraries)
+For more on Libraries in C, look at this: [Libraries in C](https://docencia.ac.upc.edu/FIB/USO/Bibliografia/unix-c-libraries.html#libraries)
