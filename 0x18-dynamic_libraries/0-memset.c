@@ -2,7 +2,6 @@
 
 /**
  * _memset: files memory with constant byte
- *
  * @s: input string
  * @b: input character
  * @n: number of bytes
