@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * _memcpy: function copies memory area
+ * _memcpy: function copies memory area of given string
  *
  * @dest: input string
  * @src: input string
