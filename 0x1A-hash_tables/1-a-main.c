@@ -1,3 +1,5 @@
+#include "hash_tables.h"
+
 /**
  * main - check the code
  *
