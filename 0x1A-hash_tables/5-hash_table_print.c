@@ -10,10 +10,10 @@ void hash_table_print(const hash_table_t *ht)
 	hash_node_t *node;
 	int first_pair;
 	unsigned long int i;
-	
+
 	if (ht == NULL)
 		return;
-	
+
 	printf("{");
 
 	first_pair = 1;
