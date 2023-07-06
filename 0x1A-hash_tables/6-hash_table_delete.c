@@ -6,11 +6,11 @@ void hash_table_delete(hash_table_t *ht)
 {
 	hash_node_t *node;
 	hash_node_t *current;
+	unsigned long int i;
 
 	if (ht == NULL)
 		return;
 
-	unsigned long int i;
 	for (i = 0; i < ht->size; i++)
 	{
 		node = ht->array[i];
