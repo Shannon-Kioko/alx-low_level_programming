@@ -32,6 +32,34 @@ typedef struct hash_table_s
      hash_node_t **array;
 } hash_table_t;
 
+/* ~~~~~~Advanced Task Functions~~~~~~ */
+
+/**
+ * shash_table create - creates a hash table.
+ * @size - unint size of array
+ * Return -  pointer to the newly created hash table
+ **/
+shash_table_t *shash_table_create(unsigned long int size);
+/** 
+ * shash_table_set - adds an element to the hash table.
+ * @ht - hash table you want to add or update the key/value to
+ * @key - key that cannot be empty string
+ * @value -value associated w key, must be dupped
+ * can be empty
+ * Return - 1 if success, 0 otherwise
+**/
+int shash_table_set(shash_table_t *ht, const char *key, const char *value);
+/**
+* shash_table get - retrieves a value associated with a key.
+* @ht - the hash table you want to look into
+* @key - the key you are looking for
+* Return - value if success, otherwise NULL 
+**/
+char *shash_table_get(const shash_table_t *ht, const char *key);
+void shash_table_print(const shash_table_t *ht);
+void shash_table_print_rev(const shash_table_t *ht);
+void shash_table_delete(shash_table_t *ht);
+
 hash_table_t *hash_table_create(unsigned long int size);
 unsigned long int hash_djb2(const unsigned char *str);
 unsigned long int key_index(const unsigned char *key, unsigned long int size);
