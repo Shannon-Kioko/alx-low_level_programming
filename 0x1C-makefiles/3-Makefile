@@ -1,4 +1,4 @@
-# Build school executable with variables
+# Builds school executable with variables, deleting all Emacs and Vim temp files
 CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
