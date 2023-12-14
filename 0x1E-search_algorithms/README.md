@@ -84,7 +84,8 @@ Value checked array[9] = [9]
 Found 999 at index: -1
 ```
 
-[1. Binary search](1-binary.c)
+### [1. Binary search](1-binary.c)
+
 Write a function that searches for a value in a sorted array of integers using the Binary search algorithm
 
 - Prototype : `int binary_search(int *array, size_t size, int value);`
@@ -139,19 +140,24 @@ Searching in array: 9
 Found 999 at index: -1
 ```
 
-[2. Big O #0](2-O)
+### [2. Big O #0](2-O)
+
 What is the `time complexity` (worst case) of a linear search in an array of size `n`?
 
-[3. Big O #1](3-O)
+### [3. Big O #1](3-O)
+
 What is the `space complexity` (worst case) of an iterative linear search algorithm in an array of size `n`?
 
-[4. Big O #2](4-O)
+### [4. Big O #2](4-O)
+
 What is the `time complexity` (worst case) of a binary search in an array of size `n`?
 
-[5. Big O #3](5-O)
+### [5. Big O #3](5-O)
+
 What is the space complexity (worst case) of a binary search in an array of size n?
 
-[6. Big O #4](6-O)
+### [6. Big O #4](6-O)
+
 What is the `space complexity` of this function / algorithm?
 
 ```bash
@@ -168,7 +174,8 @@ int **allocate_map(int n, int m)
 }
 ```
 
-[7. Jump search](100-jump.c)
+### [7. Jump search](100-jump.c)
+
 Write a function that searches for a value in a sorted array of integers using the [Jump search algorithm](https://en.wikipedia.org/wiki/Jump_search)
 
 - Prototype : `int jump_search(int *array, size_t size, int value);`
@@ -181,10 +188,12 @@ Write a function that searches for a value in a sorted array of integers using t
 - You have to use the square root of the size of the array as the jump step.
 - You can use the `sqrt()` function included in `<math.h>` (don’t forget to compile with -lm)
 
-[8. Big O #5](101-O)
+### [8. Big O #5](101-O)
+
 What is the `time complexity` (average case) of a jump search in an array of size `n`, using s`tep = sqrt(n)`?
 
-[9. Interpolation search](102-interpolation.c)
+### [9. Interpolation search](102-interpolation.c)
+
 Write a function that searches for a value in a sorted array of integers using the Interpolation search algorithm
 
 - Prototype : `int interpolation_search(int *array, size_t size, int value);`
@@ -196,7 +205,8 @@ Write a function that searches for a value in a sorted array of integers using t
 - If `value` is not present in `array` or if `array` is `NULL`, your function must return `-1`
 - To determine the probe position, you can use : `size_t pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]))`
 
-[10. Exponential search](103-exponential.c)
+### [10. Exponential search](103-exponential.c)
+
 Write a function that searches for a value in a sorted array of integers using the [Exponential search algorithm](https://en.wikipedia.org/wiki/Exponential_search)
 
 - Prototype : `int exponential_search(int *array, size_t size, int value);`
@@ -211,7 +221,8 @@ Write a function that searches for a value in a sorted array of integers using t
 - Once you’ve found the good range, you need to use a binary search:
 - Every time you split the array, you have to print the new array (or subarray) you’re searching in (See example)
 
-[11. Advanced binary search](104-advanced_binary.c)
+### [11. Advanced binary search](104-advanced_binary.c)
+
 You may have noticed that the basic binary search does not necessarily return the index of the _first_ value in the array (if this value appears more than once in the array). In this exercise, you’ll have to solve this problem.
 
 Write a function that searches for a value in a sorted array of integers.
@@ -226,7 +237,8 @@ Write a function that searches for a value in a sorted array of integers.
 - Every time you split the array, you have to print the new array (or subarray) you’re searching in (See example)
 - You have to use recursion. You may only use one loop (`while`, `for`, `do while`, etc.) in order to print the array
 
-[12. Jump search in a singly linked list](105-jump_list.c)
+### [12. Jump search in a singly linked list](105-jump_list.c)
+
 You might think that linear search is not as effective as any other algorithm, right? Well, we should see what happens with a singly linked list.
 
 Write a function that searches for a value in a sorted list of integers using the Jump search algorithm.
@@ -243,7 +255,8 @@ Write a function that searches for a value in a sorted list of integers using th
 - Every time you compare a value in the list to the value you are searching, you have to print this value (see example)
 - NOTE: [You can find here](https://github.com/alx-tools/0x1D.c/tree/master/listint) the functions used in the example.
 
-[13. Linear search in a skip list](106-linear.c)
+### [13. Linear search in a skip list](106-linear.c)
+
 As you see now, looking for a specific value in a singly linked list always leads to browse every element of the list. A common way to optimize the time complexity of a search in a singly linked list is to modify the list itself by adding an “express lane” to browse it. A linked list with an express lane is called a [skip list](https://en.wikipedia.org/wiki/Skip_list). This change does not come without consequences. Indeed, the space complexity of a search in this kind of list will grow as `sizeof(skiplist_t) > sizeof(listint_t)` (see example below).
 
 Write a function that searches for a value in a sorted skip list of integers.
